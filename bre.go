@@ -118,6 +118,7 @@ func compile(brePackage *BrePkg) (err error) {
 		for _, action := range rule.Actions {
 			actionExpr, actionErr := parser.ParseExpr(action)
 
+			// For Debugging Purpose
 			//	spew.Dump(actionExpr)
 
 			if actionErr != nil {
